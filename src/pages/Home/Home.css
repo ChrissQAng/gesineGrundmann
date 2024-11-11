@@ -1,0 +1,8 @@
+img {
+  position: absolute;
+}
+.about {
+  position: relative;
+  top: 50%;
+  left: 10%;
+}
