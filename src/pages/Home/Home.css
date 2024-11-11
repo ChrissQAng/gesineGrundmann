@@ -5,6 +5,12 @@
 .container img {
   display: block;
 }
+.container h1 {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 8%;
+  left: 33%;
+}
 .container a {
   color: white;
 }
@@ -14,8 +20,8 @@
 }
 .about {
   position: absolute;
-  top: 35%;
-  left: 24%;
+  top: 36%;
+  left: 24.5%;
 }
 .contact {
   position: absolute;
@@ -25,15 +31,15 @@
 .texts {
   position: absolute;
   top: 33%;
-  left: 71%;
+  left: 71.5%;
 }
 .views {
   position: absolute;
-  top: 47%;
-  left: 56%;
+  top: 47.5%;
+  left: 56.5%;
 }
 .works {
   position: absolute;
   top: 58%;
-  left: 24%;
+  left: 24.5%;
 }

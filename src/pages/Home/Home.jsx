@@ -3,10 +3,10 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <h1>Gesine Grundmann</h1>
       <br />
       <div className="container">
         <img src="/./public/images/image.png" alt="" />
+        <h1>Gesine Grundmann</h1>
         <a className="about" href="/about">
           about
         </a>
