@@ -1,20 +1,21 @@
-.container {
+.homeWrapper {
   position: relative;
   width: fit-content;
 }
-.container img {
+.homeWrapper img {
   display: block;
 }
-.container h1 {
+.homeWrapper h1 {
   font-size: 2.8rem;
+  font-weight: normal;
   position: absolute;
-  top: 8%;
-  left: 33%;
+  top: 10%;
+  left: 27%;
 }
-.container a {
+.homeWrapper a {
   color: white;
 }
-.container a:hover {
+.homeWrapper a:hover {
   color: black;
   transform: scale(1.3);
 }

@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <br />
-      <div className="container">
+      <div className="homeWrapper">
         <img src="/./public/images/image.png" alt="" />
         <h1>Gesine Grundmann</h1>
         <a className="about" href="/about">

@@ -1,0 +1,9 @@
+.worksWrapper {
+  padding: 5% 10%;
+}
+
+.tileGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+}
