@@ -8,6 +8,7 @@ import { buildConfig } from 'payload/config'
 import cloudinaryPlugin from 'payload-cloudinary-plugin/dist/plugins';
 import Users from './collections/Users'
 import artObjects from './collections/artObects'
+import Media from './collections/Media'
 
 export default buildConfig({
   admin: {
@@ -20,7 +21,7 @@ export default buildConfig({
       fileSize: 5000000, // 5MB en bytes
     },
   },
-  collections: [Users, artObjects],
+  collections: [Users, artObjects, Media],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
