@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types'
 
 const Media: CollectionConfig = {
   slug: 'media',
+  access: {
+    read: () => true,
+  },
   admin: {
     useAsTitle: "filename" },
   upload: {

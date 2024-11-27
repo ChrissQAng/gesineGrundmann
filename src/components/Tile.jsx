@@ -1,10 +1,9 @@
 import "./Tile.css";
 
-const Tile = ({ img, description, id }) => {
+const Tile = ({ imgUrl }) => {
   return (
     <div>
-      <img src="\images\object01.jpg" alt="placeholder" />
-      <p>o.T., 2009, Wellpolyester, mattiert, fünf Kuben à 50 x 50 x 50 cm</p>
+      <img src={imgUrl} />
     </div>
   );
 };

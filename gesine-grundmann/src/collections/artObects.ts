@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types'
 
 const artObjects: CollectionConfig = {
   slug: 'artobjects',
+  access: {
+    read: () => true,
+  },
   // upload: {
   //   mimeTypes: ['image/png', 'image/jpeg', 'image/gif', 'image/webp'],
   //   disableLocalStorage: true,

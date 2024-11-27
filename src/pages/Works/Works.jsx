@@ -4,8 +4,8 @@ import Tile from "../../components/Tile";
 import { useEffect, useState } from "react";
 
 const Works = () => {
-  const [data, setData] = useState(null);
-  // const [error, setError] = useState(null);
+  const [objects, setObjects] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchAllObjects = async () => {
@@ -15,13 +15,12 @@ const Works = () => {
           throw new Error("Network response was not ok");
         }
         const data = await res.json();
-        // setData(data);
-        console.log("Hallo");
-
-        console.log(data);
+        console.log(data.docs);
+        setObjects(data.docs);
+        console.log("objects", objects);
       } catch (error) {
-        // setError(error.message);
-        // console.error("Error fetching data:");
+        setError(error.message);
+        console.error("Error fetching data:", error);
       }
     };
     fetchAllObjects();
@@ -29,14 +28,16 @@ const Works = () => {
 
   return (
     <div className="worksWrapper">
-      {/* <h1>works</h1>
+      <h1>works</h1>
       <div className="tileGrid">
-        <Tile />
-        <Tile />
-        <Tile />
-        <Tile />
-        <Tile />
-      </div> */}
+        {objects ? (
+          objects.map((item) => (
+            <Tile key={item.id} imgUrl={item.images[0].image.url} />
+          ))
+        ) : (
+          <p></p>
+        )}
+      </div>
     </div>
   );
 };
