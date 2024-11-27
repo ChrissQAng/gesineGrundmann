@@ -1,9 +1,23 @@
 import express from 'express'
 import payload from 'payload'
 import { mediaManagement } from 'payload-cloudinary-plugin';
+import cors from "cors"; 
 
 require('dotenv').config()
 const app = express()
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", // DEIN FRONTEND
+      "http://localhost:3003/admin",
+    ],
+    credentials: true, 
+  })
+);
+
+
+
 app.use(
   mediaManagement({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

@@ -9,6 +9,7 @@ import cloudinaryPlugin from 'payload-cloudinary-plugin/dist/plugins';
 import Users from './collections/Users'
 import artObjects from './collections/artObects'
 import Media from './collections/Media'
+// import OrderCollection from './collections/OrderCollection'
 
 export default buildConfig({
   admin: {

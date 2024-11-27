@@ -17,8 +17,20 @@ const artObjects: CollectionConfig = {
           relationTo: "media"
         }
       ]
-
     },
+    // order collection here ---------------
+    // {name: "orders",
+    //   type: "number",
+    // //   fields: [
+    // //     {
+    // //     name: "order",
+    // //     type: "number",
+    // //     relationTo: "orderCollection"
+    // //   }
+    // // ]
+    // relationTo: "orderCollection"
+    // },
+    // ends here --------------------------
 {
     name: 'description',
     type: 'text',
@@ -29,7 +41,10 @@ const artObjects: CollectionConfig = {
     type: 'checkbox',
     required: true,
 },
-
+{
+  name: 'orderOfObjects',
+  type: 'number'
+}
   ],
 }
 
