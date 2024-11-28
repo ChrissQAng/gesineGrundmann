@@ -8,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import Texts from "./pages/Texts/Texts";
 import Views from "./pages/Views/Views";
 import Works from "./pages/Works/Works";
+import Details from "./pages/Detail/Details";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/texts" element={<Texts />} />
           <Route path="/views" element={<Views />} />
           <Route path="/works" element={<Works />} />
+          <Route path="/details/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </>

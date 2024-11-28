@@ -31,9 +31,7 @@ const Works = () => {
       <h1>works</h1>
       <div className="tileGrid">
         {objects ? (
-          objects.map((item) => (
-            <Tile key={item.id} imgUrl={item.images[0].image.url} />
-          ))
+          objects.map((item) => <Tile key={item.id} object={item} />)
         ) : (
           <p></p>
         )}

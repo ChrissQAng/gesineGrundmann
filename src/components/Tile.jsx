@@ -1,9 +1,12 @@
 import "./Tile.css";
+import { Link } from "react-router-dom";
 
-const Tile = ({ imgUrl }) => {
+const Tile = ({ object }) => {
   return (
     <div>
-      <img src={imgUrl} />
+      <Link to={`/details/${object.id}`} state={object}>
+        <img src={object.images[0].image.url} />
+      </Link>
     </div>
   );
 };
