@@ -9,7 +9,7 @@ const Media: CollectionConfig = {
     useAsTitle: "filename" },
   upload: {
     mimeTypes: ['image/png', 'image/jpeg', 'image/gif', 'image/webp'],
-    disableLocalStorage: true,
+    disableLocalStorage: false,
   },
   fields: [
 

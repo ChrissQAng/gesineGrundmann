@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // DEIN FRONTEND
-      "http://localhost:3003/admin",
+      "http://localhost:3004/admin",
     ],
     credentials: true, 
   })
@@ -44,7 +44,7 @@ const start = async () => {
 
   // Add your own express routes here
 
-  app.listen(3003)
+  app.listen(3004)
 }
 
 start()
