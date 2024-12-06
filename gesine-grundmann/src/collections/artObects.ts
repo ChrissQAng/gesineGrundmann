@@ -5,10 +5,7 @@ const artObjects: CollectionConfig = {
   access: {
     read: () => true,
   },
-  // upload: {
-  //   mimeTypes: ['image/png', 'image/jpeg', 'image/gif', 'image/webp'],
-  //   disableLocalStorage: true,
-  // },
+
   fields: [
     {name: "images",
       type: "array",
@@ -21,19 +18,7 @@ const artObjects: CollectionConfig = {
         }
       ]
     },
-    // order collection here ---------------
-    // {name: "orders",
-    //   type: "number",
-    // //   fields: [
-    // //     {
-    // //     name: "order",
-    // //     type: "number",
-    // //     relationTo: "orderCollection"
-    // //   }
-    // // ]
-    // relationTo: "orderCollection"
-    // },
-    // ends here --------------------------
+
 {
     name: 'description',
     type: 'text',

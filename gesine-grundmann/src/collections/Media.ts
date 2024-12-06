@@ -16,7 +16,7 @@ const Media: CollectionConfig = {
 {
     name: 'orderOfImages',
     type: 'number',
-    required: true,
+    required: false,
 },
 
   ],

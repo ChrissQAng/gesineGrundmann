@@ -5,7 +5,7 @@ const Tile = ({ object }) => {
   return (
     <div>
       <Link to={`/details/${object.id}`} state={object}>
-        <img src={object.images[0].image.url} />
+        <img className="tile-image" src={object.images[0].image.url} />
       </Link>
     </div>
   );

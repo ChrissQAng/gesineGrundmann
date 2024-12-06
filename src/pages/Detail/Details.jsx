@@ -8,8 +8,7 @@ const Details = () => {
   console.log("detail", objectInfo);
 
   return (
-    <>
-      <h1>detail</h1>
+    <div className="detail">
       {objectInfo && objectInfo.images ? (
         objectInfo.images.map((item, index) => (
           <img src={item.image.url} key={index} alt={`object-${index}`} />
@@ -22,7 +21,7 @@ const Details = () => {
       ) : (
         <p>No details available</p>
       )}
-    </>
+    </div>
   );
 };
 

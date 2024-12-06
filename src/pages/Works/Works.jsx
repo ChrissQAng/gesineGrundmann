@@ -10,7 +10,9 @@ const Works = () => {
   useEffect(() => {
     const fetchAllObjects = async () => {
       try {
-        const res = await fetch(`http://localhost:3003/api/artobjects/`);
+        const res = await fetch(
+          `http://localhost:3003/api/artobjects?where[vorangestellt][equals]=false&sort=orderOfObjects`
+        );
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
@@ -33,7 +35,7 @@ const Works = () => {
         {objects ? (
           objects.map((item) => <Tile key={item.id} object={item} />)
         ) : (
-          <p></p>
+          <p>No image available</p>
         )}
       </div>
     </div>

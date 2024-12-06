@@ -1,6 +1,5 @@
-
-
-/* .tile {
-  width: 20%;
-  margin: 5%;
-} */
+.tile-image {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}

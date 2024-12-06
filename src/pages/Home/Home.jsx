@@ -1,6 +1,33 @@
 import "./Home.css";
 
+import Tile from "../../components/Tile";
+import { useEffect, useState } from "react";
+
 const Home = () => {
+  const [objects, setObjects] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchHomeObjects = async () => {
+      try {
+        const res = await fetch(
+          `http://localhost:3003/api/artobjects?where[vorangestellt][equals]=true`
+        );
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await res.json();
+        console.log(data.docs);
+        setObjects(data.docs);
+        console.log("objects", objects);
+      } catch (error) {
+        setError(error.message);
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchHomeObjects();
+  }, []);
+
   return (
     <>
       <br />
@@ -22,6 +49,13 @@ const Home = () => {
         <a className="works" href="/works">
           works
         </a>
+      </div>
+      <div className="homeTiles">
+        {objects ? (
+          objects.map((item) => <Tile key={item.id} object={item} />)
+        ) : (
+          <p>No image available</p>
+        )}
       </div>
     </>
   );
