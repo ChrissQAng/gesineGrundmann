@@ -11,7 +11,7 @@ const Home = () => {
     const fetchHomeObjects = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=true`
+          `http://87.106.129.195:3004/api/artobjects?where[vorangestellt][equals]=true`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -32,8 +32,8 @@ const Home = () => {
     <>
       <br />
       <div className="homeWrapper">
-        <img src="/./public/images/image.png" alt="" />
-        <h1>Gesine Grundmann</h1>
+        <img src="/images/image.png" alt="" />
+        <h1>GGGesine Grundmann</h1>
         <a className="about" href="/about">
           about
         </a>
