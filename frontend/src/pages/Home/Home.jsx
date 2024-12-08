@@ -11,7 +11,9 @@ const Home = () => {
     const fetchHomeObjects = async () => {
       try {
         const res = await fetch(
-          `http://87.106.129.195:3004/api/artobjects?where[vorangestellt][equals]=true`
+          `http://${
+            import.meta.env.VITE_SERVER_IP
+          }/api/artobjects?where[vorangestellt][equals]=true`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok");
