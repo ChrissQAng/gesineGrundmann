@@ -11,7 +11,8 @@ app.use(
     origin: [
       "http://localhost:5173", // DEIN FRONTEND
       "http://localhost:3004/admin",
-    ],
+      "http://87.106.129.195"
+         ],
     credentials: true, 
   })
 );
@@ -25,7 +26,7 @@ app.use(
     api_secret: process.env.CLOUDINARY_API_SECRET,
   })
 );
-app.use('/',express.static('frontend/files'))
+
 
 // Redirect root to Admin panel
 // app.get('/', (_, res) => {

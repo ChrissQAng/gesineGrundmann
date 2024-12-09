@@ -11,7 +11,7 @@ const Works = () => {
     const fetchAllObjects = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=false&sort=orderOfObjects`
+          `${window.location.origin}/api/artobjects?where[vorangestellt][equals]=false&sort=orderOfObjects`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok");

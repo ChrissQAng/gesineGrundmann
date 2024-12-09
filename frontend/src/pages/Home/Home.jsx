@@ -10,10 +10,10 @@ const Home = () => {
   useEffect(() => {
     const fetchHomeObjects = async () => {
       try {
+        console.log(window.location.origin);
+
         const res = await fetch(
-          `http://${
-            import.meta.env.VITE_SERVER_IP
-          }/api/artobjects?where[vorangestellt][equals]=true`
+          `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok");
