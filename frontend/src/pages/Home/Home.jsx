@@ -2,6 +2,7 @@ import "./Home.css";
 
 import Tile from "../../components/Tile";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [objects, setObjects] = useState([]);
@@ -13,7 +14,9 @@ const Home = () => {
         console.log(window.location.origin);
 
         const res = await fetch(
-          `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true`
+          //   `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true`
+          // );
+          `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=true`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -35,8 +38,8 @@ const Home = () => {
       <br />
       <div className="homeWrapper">
         <img src="/images/image.png" alt="" />
-        <h1>GGGesine Grundmann</h1>
-        <a className="about" href="/about">
+        <h1>Gesine Grundmann</h1>
+        {/* <a className="about" href="/about">
           about
         </a>
         <a className="contact" href="/contact">
@@ -47,10 +50,23 @@ const Home = () => {
         </a>
         <a className="views" href="/views">
           views
-        </a>
-        <a className="works" href="/works">
+        </a> */}
+
+        <Link to="/about" className="about">
+          about
+        </Link>
+        <Link to="/contact" className="contact">
+          contact
+        </Link>
+        <Link to="/texts" className="texts">
+          texts
+        </Link>
+        <Link to="/views" className="views">
+          views
+        </Link>
+        <Link to="/works" className="works">
           works
-        </a>
+        </Link>
       </div>
       <div className="homeTiles">
         {objects ? (

@@ -1,8 +1,10 @@
+import "./Contact.css";
+
 const Contact = () => {
   return (
-    <>
-      <h1>Contact</h1>
-    </>
+    <div className="contact-wrapper">
+      <h2>contact</h2>
+    </div>
   );
 };
 

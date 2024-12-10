@@ -1,8 +1,10 @@
+import "./Texts.css";
+
 const Texts = () => {
   return (
-    <>
-      <h1>texts</h1>
-    </>
+    <div className="texts-wrapper">
+      <h2>texts</h2>
+    </div>
   );
 };
 

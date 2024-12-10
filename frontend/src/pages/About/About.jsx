@@ -1,8 +1,10 @@
+import "./About.css";
+
 const About = () => {
   return (
-    <>
-      <h1>About</h1>
-    </>
+    <div className="about-wrapper">
+      <h2>about</h2>
+    </div>
   );
 };
 

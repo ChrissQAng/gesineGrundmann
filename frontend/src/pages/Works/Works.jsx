@@ -11,7 +11,9 @@ const Works = () => {
     const fetchAllObjects = async () => {
       try {
         const res = await fetch(
-          `${window.location.origin}/api/artobjects?where[vorangestellt][equals]=false&sort=orderOfObjects`
+          //   `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=false&sort=orderOfObjects`
+          // );
+          `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=false&sort=orderOfObjects`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -30,7 +32,7 @@ const Works = () => {
 
   return (
     <div className="worksWrapper">
-      <h1>works</h1>
+      <h2>works</h2>
       <div className="tileGrid">
         {objects ? (
           objects.map((item) => <Tile key={item.id} object={item} />)
