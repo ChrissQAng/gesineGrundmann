@@ -13,11 +13,11 @@ const Media: CollectionConfig = {
   },
   fields: [
 
-{
-    name: 'orderOfImages',
-    type: 'number',
-    required: false,
-},
+// {
+//     name: 'orderOfImages',
+//     type: 'number',
+//     required: false,
+// },
 
   ],
 };
