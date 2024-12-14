@@ -1,5 +1,6 @@
 .tile-image {
   width: 25vw;
-  height: auto;
-  object-fit: cover;
+  margin-bottom: 0.75rem;
+  /* width: calc(33.33% - 10px); */
+  /* margin-bottom: 0; */
 }
