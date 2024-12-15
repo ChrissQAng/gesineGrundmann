@@ -10,6 +10,8 @@ const Media: CollectionConfig = {
   upload: {
     mimeTypes: ['image/png', 'image/jpeg', 'image/gif', 'image/webp'],
     disableLocalStorage: false,
+    staticDir: '/var/www/html/media'
+
   },
   fields: [
 
