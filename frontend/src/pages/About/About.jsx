@@ -45,7 +45,9 @@ const About = () => {
       </p>
       <p>
         <span>2024 SS</span>Keramik, Künstlerisches Gestalten, Institut für
-        Künstlerische Keramik und Glas IKKG, Höhr-Grenzhausen
+      </p>
+      <p>
+        <span></span>Künstlerische Keramik und Glas IKKG, Höhr-Grenzhausen
       </p>
       <h4>Stipendien, Preise, Residencies</h4>
       <p>
