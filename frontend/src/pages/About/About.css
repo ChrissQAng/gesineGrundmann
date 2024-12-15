@@ -2,3 +2,8 @@
   padding: 5% 10%;
   background-color: #efefef;
 }
+
+.about-wrapper span {
+  display: inline-block;
+  width: 5.625rem;
+}
