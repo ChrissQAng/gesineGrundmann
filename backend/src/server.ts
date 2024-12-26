@@ -1,6 +1,6 @@
 import express from 'express'
 import payload from 'payload'
-import { mediaManagement } from 'payload-cloudinary-plugin';
+// import { mediaManagement } from 'payload-cloudinary-plugin';
 import cors from "cors"; 
 
 require('dotenv').config()
@@ -19,13 +19,13 @@ app.use(
 
 
 
-app.use(
-  mediaManagement({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
-  })
-);
+// app.use(
+//   mediaManagement({
+//     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+//     api_key: process.env.CLOUDINARY_API_KEY,
+//     api_secret: process.env.CLOUDINARY_API_SECRET,
+//   })
+// );
 
 
 // Redirect root to Admin panel

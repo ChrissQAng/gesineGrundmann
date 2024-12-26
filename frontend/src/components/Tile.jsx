@@ -7,7 +7,9 @@ const Tile = ({ object }) => {
       <Link to={`/details/${object.id}`} state={object}>
         <img
           className="tile-image"
-          src={object.images[0].image.original_doc.url}
+          // src={object.images[0].image.original_doc.url}
+
+          src={"/public/media/" + object.images[0].image.filename}
         />
       </Link>
     </div>
