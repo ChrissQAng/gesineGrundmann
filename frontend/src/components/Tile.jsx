@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Tile = ({ object }) => {
   return (
-    <div>
+    <div className="tile-wrapper">
       <Link to={`/details/${object.id}`} state={object}>
         <img
           className="tile-image"

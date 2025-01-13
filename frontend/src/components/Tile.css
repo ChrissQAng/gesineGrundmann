@@ -1,6 +1,4 @@
-.tile-image {
+.tile-wrapper img {
   width: 25vw;
   margin-bottom: 0.75rem;
-  /* width: calc(33.33% - 10px); */
-  /* margin-bottom: 0; */
 }

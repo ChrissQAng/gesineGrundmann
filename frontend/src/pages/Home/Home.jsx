@@ -37,7 +37,7 @@ const Home = () => {
     <>
       <div className="homeWrapper">
         <img src="/images/image.png" alt="" />
-        <h1 className="gesine">Gesine Grundmann</h1>
+        <h1>Gesine Grundmann</h1>
 
         <Link to="/about" className="about">
           about
