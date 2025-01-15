@@ -1,6 +1,6 @@
 import path from 'path'
 
-import { payloadCloud } from '@payloadcms/plugin-cloud'
+// import { payloadCloud } from '@payloadcms/plugin-cloud'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { webpackBundler } from '@payloadcms/bundler-webpack'
 import { slateEditor } from '@payloadcms/richtext-slate'
@@ -21,6 +21,8 @@ export default buildConfig({
     limits: {
       fileSize: 5000000, // 5MB en bytes
     },
+    useTempFiles: true,
+    disableLocalStorage: false,
   },
   collections: [Users, artObjects, Media],
   typescript: {
@@ -29,7 +31,9 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-  plugins: [payloadCloud()],
+  plugins:
+  //  [payloadCloud()],
+   [],
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),

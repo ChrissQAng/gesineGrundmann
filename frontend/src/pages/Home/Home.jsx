@@ -14,10 +14,10 @@ const Home = () => {
         console.log(window.location.origin);
 
         const res = await fetch(
-          //   `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true`
-          // );
-          `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=true`
+          `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true`
         );
+        //   `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=true` // LOCAL
+        // );
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
