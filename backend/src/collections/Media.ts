@@ -10,8 +10,8 @@ const Media: CollectionConfig = {
   upload: {
     mimeTypes: ['image/png', 'image/jpeg', 'image/gif', 'image/webp'],
     disableLocalStorage: false,
-    // staticDir: '/var/www/html/media'
-  staticDir: 'C:/Users/chriss/Desktop/DEV/gesineGrundmann/frontend/public/media'
+    staticDir: '/var/www/html/media'
+  // staticDir: 'C:/Users/chriss/Desktop/DEV/gesineGrundmann/frontend/public/media'
 
   },
   fields: [
