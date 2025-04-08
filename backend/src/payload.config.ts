@@ -32,7 +32,6 @@ export default buildConfig({
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
   plugins:
-  //  [payloadCloud()],
    [],
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
