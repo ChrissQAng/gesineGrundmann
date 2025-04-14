@@ -1,7 +1,4 @@
-// hallo TEST
-
 import "./Home.css";
-
 import Tile from "../../components/Tile";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -18,8 +15,7 @@ const Home = () => {
         const res = await fetch(
           `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true`
         );
-        //   `http://localhost:3004/api/artobjects?where[vorangestellt][equals]=true` // LOCAL
-        // );
+        // `${window.location.origin}:3004/api/artobjects?where[vorangestellt][equals]=true` // SERVER-CODE
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
@@ -37,32 +33,36 @@ const Home = () => {
 
   return (
     <>
-      <div className="homeWrapper">
-        <img src="/images/image.png" alt="" />
-        <h1>Gesine Grundmann</h1>
-
-        <Link to="/about" className="about">
-          about
-        </Link>
-        <Link to="/contact" className="contact">
-          contact
-        </Link>
-        <Link to="/texts" className="texts">
-          texts
-        </Link>
-        <Link to="/views" className="views">
-          views
-        </Link>
-        <Link to="/works" className="works">
-          works
-        </Link>
-      </div>
-      <div className="homeTiles">
-        {objects ? (
-          objects.map((item) => <Tile key={item.id} object={item} />)
-        ) : (
-          <p>No image available</p>
-        )}
+      <div className="home">
+        <div className="homeWrapper">
+          <h1>Gesine Grundmann</h1>
+          <img src="/images/image.png" alt="" />
+          <Link to="/about" className="about">
+            about
+          </Link>
+          <Link to="/contact" className="contact">
+            contact
+          </Link>
+          <Link to="/texts" className="texts">
+            texts
+          </Link>
+          <Link to="/views" className="views">
+            views
+          </Link>
+          <Link to="/works" className="works">
+            works
+          </Link>
+          <Link to="/music" className="music">
+            120 den
+          </Link>
+        </div>
+        <div className="homeTiles">
+          {objects ? (
+            objects.map((item) => <Tile key={item.id} object={item} />)
+          ) : (
+            <p>No image available</p>
+          )}
+        </div>
       </div>
     </>
   );

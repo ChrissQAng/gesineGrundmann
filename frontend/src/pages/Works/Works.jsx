@@ -2,6 +2,8 @@ import "./Works.css";
 
 import Tile from "../../components/Tile";
 import { useEffect, useState } from "react";
+import BackArrow from "../../components/Backarrow/Backarrow";
+import ScrollToTop from "../../components/Scrolltotop/Scrolltotop";
 
 const Works = () => {
   const [objectss, setObjectss] = useState([]);
@@ -12,10 +14,9 @@ const Works = () => {
     const fetchAllObjects = async () => {
       try {
         const res = await fetch(
-          `${window.location.origin}:3004/api/artobjects?limit=0&&where[vorangestellt][equals]=false&sort=orderOfObjects`
+          `${window.location.origin}:3004/api/artobjects?limit=0&sort=orderOfObjects`
         );
-        // `http://localhost:3004/api/artobjects?limit=0&&where[vorangestellt][equals]=false&sort=orderOfObjects` // LOCAL
-
+        // `${window.location.origin}:3004/api/artobjects?limit=0&sort=orderOfObjects`  // SREVER-CODE
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
@@ -33,6 +34,8 @@ const Works = () => {
 
   return (
     <div className="worksWrapper">
+      <BackArrow />
+      <ScrollToTop />
       <h2>works</h2>
       <div className="tileGrid">
         {objectss ? (

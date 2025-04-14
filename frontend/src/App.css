@@ -10,20 +10,22 @@ img {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 h1 {
   font-size: 3.3rem;
   font-weight: normal;
   position: absolute;
   top: 5%;
+  left: 10%;
   color: black;
-  width: 100%;
-  text-align: center;
+  z-index: 100;
+  /* text-align: center; */
 }
 h2 {
   padding-bottom: 10vh;
   font-size: 2.8rem;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 h3 {
@@ -35,49 +37,181 @@ h4 {
   padding-top: 5vh;
   font-weight: normal;
 }
-
+.copyright {
+  margin-top: 5vh;
+  font-style: italic;
+  font-weight: 700;
+}
 @media (min-width: 992px) and (max-width: 1200px) {
+  .home {
+    padding-top: 7vh;
+  }
   .homeWrapper a {
     font-size: 0.9rem;
   }
   .homeWrapper h1 {
     font-size: 3rem;
+    top: -5%;
   }
-
+  .homeWrapper img {
+    transform: rotate(90deg);
+  }
+  .works {
+    position: absolute;
+    top: 21.7%;
+    left: 40%;
+  }
+  .texts {
+    position: absolute;
+    top: 21.6%;
+    left: 59.7%;
+  }
+  .music {
+    position: absolute;
+    top: 74.5%;
+    left: 37%;
+  }
+  .views {
+    position: absolute;
+    top: 43%;
+    left: 34.9%;
+  }
+  .about {
+    position: absolute;
+    top: 43.3%;
+    left: 64%;
+  }
+  .contact {
+    position: absolute;
+    top: 75%;
+    left: 61.5%;
+  }
   .tile-wrapper img {
     width: 35vw;
   }
+  .homeTiles {
+    margin-top: 0%;
+  }
 }
 @media (min-width: 769px) and (max-width: 991px) {
+  .home {
+    padding-top: 7vh;
+  }
   .homeWrapper a {
     font-size: 0.8rem;
   }
   .homeWrapper h1 {
     font-size: 2.9rem;
+    top: -5%;
+  }
+  .homeWrapper img {
+    transform: rotate(90deg);
+  }
+  .works {
+    position: absolute;
+    top: 21.7%;
+    left: 40%;
+  }
+  .texts {
+    position: absolute;
+    top: 21.6%;
+    left: 59.7%;
+  }
+  .views {
+    position: absolute;
+    top: 43%;
+    left: 34.9%;
+  }
+  .music {
+    position: absolute;
+    top: 74.5%;
+    left: 36.5%;
+  }
+  .about {
+    position: absolute;
+    top: 43.3%;
+    left: 64%;
+  }
+  .contact {
+    position: absolute;
+    top: 75%;
+    left: 61.5%;
   }
   .tile-wrapper img {
     width: 35vw;
+  }
+  .homeTiles {
+    margin-top: 0%;
   }
 }
 
 @media (min-width: 441px) and (max-width: 768px) {
+  .home {
+    padding-top: 12vh;
+  }
   .homeWrapper a {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   .homeWrapper h1 {
     font-size: 2.2rem;
+    top: -10%;
   }
   .homeWrapper a:hover {
     transform: scale(2.5);
   }
+  .homeWrapper img {
+    transform: rotate(90deg);
+  }
+  .works {
+    position: absolute;
+    top: 21.7%;
+    left: 40%;
+  }
+  .texts {
+    position: absolute;
+    top: 21.6%;
+    left: 59.7%;
+  }
+  .views {
+    position: absolute;
+    top: 43%;
+    left: 34.9%;
+  }
+  .music {
+    position: absolute;
+    top: 74%;
+    left: 37%;
+  }
+  .about {
+    position: absolute;
+    top: 43.3%;
+    left: 64%;
+  }
+  .contact {
+    position: absolute;
+    top: 75%;
+    left: 61.5%;
+  }
   .tile-wrapper img {
     width: 35vw;
+  }
+  .homeTiles {
+    margin-top: 0%;
+  }
+  .contact-insta {
+    padding-left: 50vw;
   }
 }
 
 @media (min-width: 320px) and (max-width: 440px) {
+  .home {
+    padding-top: 20vh;
+  }
+  .homeWrapper img {
+    top: 130%;
+  }
   .homeWrapper a {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   .homeWrapper a:hover {
     transform: scale(2.8);
@@ -85,8 +219,43 @@ h4 {
 
   .homeWrapper h1 {
     font-size: 2rem;
+    top: -10%;
+  }
+  .homeWrapper img {
+    transform: rotate(90deg);
+  }
+  .works {
+    position: absolute;
+    top: 21.7%;
+    left: 40%;
+  }
+  .texts {
+    position: absolute;
+    top: 21.6%;
+    left: 59.7%;
+  }
+  .views {
+    position: absolute;
+    top: 43%;
+    left: 34.9%;
+  }
+  .about {
+    position: absolute;
+    top: 43.3%;
+    left: 64%;
+  }
+  .contact {
+    position: absolute;
+    top: 75%;
+    left: 61.5%;
   }
   .tile-wrapper img {
     width: 70vw;
+  }
+  .homeTiles {
+    margin-top: 0%;
+  }
+  .contact-insta {
+    padding-left: 50vw;
   }
 }

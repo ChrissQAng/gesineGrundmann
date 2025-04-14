@@ -1,10 +1,11 @@
+.home {
+  height: 100vh;
+  background-color: #efefef;
+}
 .homeWrapper {
   position: relative;
+  background-color: #efefef;
   /* width: fit-content; */
-}
-.homeWrapper img {
-  display: block;
-  /* position: relative; */
 }
 
 .homeWrapper a {
@@ -16,18 +17,18 @@
 }
 .about {
   position: absolute;
-  top: 36%;
-  left: 24.5%;
+  top: 33%;
+  left: 71.2%;
 }
 .contact {
   position: absolute;
-  top: 31%;
-  left: 43%;
+  top: 62.1%;
+  left: 70.1%;
 }
 .texts {
   position: absolute;
-  top: 33%;
-  left: 71.5%;
+  top: 30.9%;
+  left: 43.9%;
 }
 .views {
   position: absolute;
@@ -36,17 +37,24 @@
 }
 .works {
   position: absolute;
+  top: 36%;
+  left: 24.5%;
+}
+.music {
+  position: absolute;
   top: 58%;
   left: 24.5%;
 }
 
 .homeTiles {
-  /* background-color: #efefef; */
-  margin-top: -12%;
-  padding-left: 30%;
+  background-color: #efefef;
+  margin-top: -10%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  gap: 5%;
+  gap: 1%;
   position: relative;
 }

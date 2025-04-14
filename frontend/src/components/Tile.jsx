@@ -10,8 +10,8 @@ const Tile = ({ object }) => {
         <img
           className="tile-image"
           src={object.images[0].image.url}
-
-          // src={"/public/media/" + object.images[0].image.filename} // LOCAL ?
+          // backend connection
+          //  src={object.images[0].image.url} // SERVER-CODE
         />
       </Link>
     </div>
